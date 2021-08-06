@@ -1,0 +1,232 @@
+
+h1 {
+    color: $dark-color;
+    font-weight: 1000;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+}
+#important {
+    color: $text-color;
+    text-align: center;
+    padding: auto;
+    padding: 3rem;
+}
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 2rem 0;
+}
+table {
+    padding: .5rem;
+    margin: .5rem;
+    font-size: .7rem;
+    width: $default-width;
+}
+.index {
+    padding-left: 3rem;
+    font-size: $default-font-size;
+}
+.h5 {
+    font-size: $default-font-size + .2rem;
+}
+section {
+    margin: 1.5rem;
+    padding: 0 auto;
+}
+.section__news--books {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.podcast__iframes {
+    box-sizing: border-box;
+    margin: 1.2rem 0;
+}
+#news {
+    display: flex;
+}
+.news__article--left {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.5rem auto;
+    border-bottom: 2px solid $dark-color;
+}
+.news__article--right {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.5rem auto;
+    border-bottom: 2px solid $dark-color;
+}
+.news--multimedia {
+    justify-items: flex-start;
+    width: 30rem;
+    height: 20.6rem;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+.news__articles--content {
+    font-size: 1.4rem;
+    font-style: bold;
+    align-self: center;
+    padding-bottom: .5rem 0;
+}
+a {
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: center;
+        padding: auto;
+        padding-bottom: 2rem;
+        padding-top: 7rem;
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+    .section {
+        padding: 0 5rem;
+        font-size: $default-font-size;
+    }
+    .descriptions {
+        font-size: 1.5rem;
+    }
+    table {
+        font-size: $default-font-size;
+        border: .5rem solid $bright-color !important;
+    }
+    table td {
+        padding: 0 .5rem;
+    }
+    .h5 {
+        font-size: 1.5rem;
+    }
+    .index {
+        font-size: 1.4rem;
+    }
+    .news__article--left {
+        flex-flow: row nowrap;
+        padding: 1.5rem auto;
+        border-bottom: 2px solid $dark-color;
+        align-items: center;
+    }
+    .news__article--right {
+        flex-flow: row nowrap;
+        padding: 1.5rem auto;
+        border-bottom: 2px solid $dark-color;
+        align-items: center;
+    }
+    .news--multimedia {
+        justify-items: flex-start;
+        width: 32rem;
+        height: 22rem;
+        padding: 1rem 1rem;
+    }
+    .news__articles--content {
+        font-size: 1.8rem;
+        font-style: bold;
+        align-self: center;
+        padding: 1rem 0;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #important {
+        border: 5px solid $bright-color;
+        animation-name: colors;
+        animation-duration: 7s;
+        animation-iteration-count: only one;
+        letter-spacing: 3px;
+    }
+    @keyframes colors {
+        0% {
+            border: 5px solid transparent;
+        }
+        15% {
+            border: 5px solid #00F260;
+        }
+        30% {
+            border: 5px solid $bright-color;
+        }
+        45% {
+            border: 5px solid #0575E6;
+        }
+        60% {
+            border: 5px solid $bright-color;
+        }
+        75% {
+            border: 5px solid #00F260;
+        }
+        100% {
+            border: 5px solid $bright-color;
+        }
+    }
+    h1 {
+        text-align: center;
+        padding: auto;
+        padding-bottom: 2rem;
+        padding-top: 9rem;
+        font-size: 6rem;
+    }
+    h2 {
+        padding: 3rem 0;
+        font-size: 2rem;
+    }
+    .section {
+        padding: 0 5rem;
+        font-size: 1.6rem;
+    }
+    .section__news {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .descriptions {
+        font-size: 2rem;
+    }
+    table {
+        font-size: 1.5rem;
+    }
+    .index {
+        font-size: 1.6rem;
+    }
+    .h5 {
+        font-size: 1.8rem;
+    }
+}
+
+.body__404 {
+    background-image: radial-gradient($dark-color, darkblue);
+}
+
+.container__404 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.h1__404 {
+    font-size: 10rem;
+    color: $text-color;
+    letter-spacing: 5px;
+    z-index: 10;
+}
+
+.text__404 {
+    font-size: 3rem;
+    color: $text-color;
+    text-align: justify;
+    z-index: 10;
+}
+
+.img__404 {
+    position: fixed;
+    width: 500px;
+    height: 230px;
+    z-index: -1;
+    padding: auto;
+    align-self: center;
+}

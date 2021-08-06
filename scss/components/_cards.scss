@@ -1,0 +1,16 @@
+
+.card-content {
+    font-size: .8rem;
+    text-align:justify;
+}
+.card-small {
+    font-size: .8rem;
+}
+@media screen and (min-width: 1024px) {
+    .card-content {
+        font-size: 1.4rem;
+    }
+    .card-small {
+        font-size: $default-font-size;
+    }
+}
