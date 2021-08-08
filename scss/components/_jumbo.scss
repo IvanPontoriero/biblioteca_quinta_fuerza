@@ -1,0 +1,166 @@
+
+.jumbotron--bg {
+    display: flex;
+    background-color: #FF3D00;
+    height: 75vh;
+    opacity: .8;
+    align-content: center;
+}
+
+.jumbotron--rounded {
+    padding: 1em;
+    margin: 2em;
+    border-radius: 3rem;
+    background-color: #D9D9D9;
+    box-shadow: 0 0 2.5rem $dark-color;
+    h3 {
+        font-weight: bold;
+        font-size: $default-font-size + .6rem;
+        padding-top: 4rem;
+        margin: 0;
+        text-align: center;
+    }
+    p {
+        padding: 1em 2.5em 0 2.5em;
+        font-size: $default-font-size - .2rem;
+        font-weight: 600;
+    }
+}
+
+.jumbotron__btn--container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.jumbotron__btn {
+    font-size: 1em;
+    display: inline-block;
+    cursor: pointer;
+    color: $bright-color;
+    border: 2px solid $bright-color;
+    padding: .25em 1em;
+    border-radius: .25em;
+    text-shadow: 0 0 .25em #D9D9D9, 0 0 1em $bright-color;
+    box-shadow: inset 0 0 .25em $bright-color, 0 0 1em $bright-color;
+    transition: background-color 100ms linear;
+}
+
+.jumbotron__btn--neon {
+    position: relative;
+}
+
+.jumbotron__btn--neon::before {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    background: $bright-color;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(45deg) scale(1, 0.5);
+    filter: blur(1em);
+    opacity: .6;
+}
+
+.jumbotron__btn--neon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 1em .5em $bright-color;
+    opacity: 0;
+    background-color: $bright-color;
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.jumbotron__btn--neon:focus {
+    text-shadow: none;
+    color: $dark-color;
+    background-color: $bright-color;
+} 
+
+.jumbotron__btn--neon:focus::before {
+    opacity: 1;
+}
+
+.jumbotron__btn--neon:focus::after {
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .jumbotron--bg {
+        height: 70vh;
+    }
+
+    .jumbotron--rounded {
+        padding: 2em;
+        margin: 4em;
+        border-radius: 6rem;
+        h3 {
+            font-size: $default-font-size + 1rem;
+        }
+        p {
+            font-size: $default-font-size;
+            font-weight: 700;
+        }
+    }
+
+    .jumbotron__btn {
+        font-size: $default-font-size + .3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .jumbotron--rounded {
+        padding: 2em;
+        margin: 5em;
+        border-radius: 6rem;
+        h3 {
+            font-size: $default-font-size + 1.3rem;
+        }
+        p {
+            font-size: $default-font-size + .5rem;
+        }
+    }
+
+    .jumbotron__btn--neon:hover {
+        text-shadow: none;
+        color: $dark-color;
+        background-color: $bright-color;
+    }
+
+    .jumbotron__btn--neon:hover::before {
+        opacity: 1;
+    }
+    
+    .jumbotron__btn--neon:hover::after {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .jumbotron--rounded {
+        padding: 2em;
+        margin: 7em;
+        border-radius: 6rem;
+        h1 {
+            font-size: $default-font-size + 2rem;
+        }
+        p {
+            font-size: $default-font-size + 1rem;
+            font-weight: 800;
+        }
+    }
+
+    .jumbotron__btn {
+        font-size: $default-font-size + .5rem;
+    }
+}

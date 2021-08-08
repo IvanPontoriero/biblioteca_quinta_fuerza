@@ -1,0 +1,37 @@
+@import 'utilities/variables';
+
+/*--------------------------GENERAL-----------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $poppins
+}
+*::before, *::after {
+    box-sizing: border-box
+}
+body {
+    background-color: #D9D9D9;
+    color: $dark-color;
+    width: $default-width
+}
+
+/*--------------------------IMPORTS-----------------------------*/
+
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/grids';
+@import 'layout/forms';
+@import 'layout/footer';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/general-components';
+@import 'components/jumbo';
+@import 'components/sassy';
+
+
+

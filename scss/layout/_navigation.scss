@@ -1,0 +1,59 @@
+
+#nav__home--container {
+    padding: 2rem 0;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    align-items: center; 
+}
+.nav__links{
+    padding: 1rem .5rem;
+    color: $text-color;
+    text-decoration: none;
+    font-size: .7rem;
+    letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+    .nav__links{
+        padding: 1rem 3rem;
+        gap: .5rem;
+        color: $text-color;
+        text-decoration: none;
+        font-size: $default-font-size;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .nav__list {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        flex-wrap: nowrap;
+    }
+    .nav__links {
+        padding: 1rem 3rem;
+        color: $text-color;
+        text-decoration: none;
+        font-size: $default-font-size + .4rem;
+        transition: all 2s;
+    }
+    .nav__links:hover {
+        text-decoration: overline;
+        color: $bright-color;
+    }
+    .dropdown-menu {
+        border-radius: 6px;
+    }
+    .nav--submenu {
+        font-size: 1.6rem;
+    }
+    .seeker {
+        height: 30px;
+        width: $default-width / 3;
+        input, button {
+            font-size: $default-font-size;
+            border-radius: 5px;
+        }
+    }
+}
