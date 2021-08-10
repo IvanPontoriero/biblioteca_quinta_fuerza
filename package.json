@@ -1,7 +1,7 @@
 {
   "name": "bqf-sass",
   "version": "1.0.0",
-  "description": "Biblioteca Quinta Fuerza con SASS",
+  "description": "Biblioteca Quinta Fuerza",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
