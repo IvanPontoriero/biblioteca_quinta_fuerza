@@ -71,9 +71,9 @@
         align-content: center;
     }
     .form__label {
-        font-size: 1.4rem;
         display: block;
         width: $default-width;
+        font-size: 1.6rem;
     }
     .form__menssage {
         padding: 2rem 0;
@@ -84,10 +84,10 @@
         padding: .5rem;
         box-sizing: border-box;
         border: 1px solid $dark-color;
+        font-size: 1.6rem;
     }
     .form input:focus, textarea:focus {
         border: 1px solid $bright-color;
-    
     }
     .form__message--resize {
         resize: vertical;

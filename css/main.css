@@ -45,6 +45,14 @@ body {
   box-shadow: 0px 3px 10px #2CECEC;
   z-index: 1; }
 
+.header__bookImg {
+  position: absolute;
+  z-index: 100;
+  width: 300px;
+  height: 138px;
+  margin-left: 33vw;
+  margin-right: 33vw; }
+
 @media screen and (min-width: 768px) {
   .general__header {
     font-size: 1.2rem; }
@@ -186,9 +194,9 @@ body {
     color: whitesmoke;
     align-content: center; }
   .form__label {
-    font-size: 1.4rem;
     display: block;
-    width: 100%; }
+    width: 100%;
+    font-size: 1.6rem; }
   .form__menssage {
     padding: 2rem 0; }
   .form input, textarea {
@@ -196,7 +204,8 @@ body {
     width: 100%;
     padding: .5rem;
     box-sizing: border-box;
-    border: 1px solid #0F2027; }
+    border: 1px solid #0F2027;
+    font-size: 1.6rem; }
   .form input:focus, textarea:focus {
     border: 1px solid #2CECEC; }
   .form__message--resize {
@@ -384,6 +393,13 @@ section {
   border-radius: 15px;
   margin-bottom: 2rem; }
 
+.news__article--title {
+  text-align: center;
+  padding: 1rem 0; }
+  .news__article--title h3 {
+    font-size: 1.8rem;
+    font-style: bold; }
+
 .news__articles--content {
   font-size: 1.4rem;
   font-style: bold;
@@ -434,14 +450,16 @@ a {
     font-size: 1.8rem;
     font-style: bold;
     align-self: center;
-    padding: 1rem 0; } }
+    padding: 1rem 0; }
+  .news__article--title h3 {
+    font-size: 2rem; } }
 
 @media only screen and (min-width: 1024px) {
   #important {
     border: 5px solid #2CECEC;
     animation-name: colors;
     animation-duration: 7s;
-    animation-iteration-count: only one;
+    animation-iteration-count: infinite;
     letter-spacing: 3px; }
   @keyframes colors {
     0% {
@@ -480,7 +498,9 @@ a {
   .index {
     font-size: 1.6rem; }
   .h5 {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .news__article--title h3 {
+    font-size: 4rem; } }
 
 .body__404 {
   background-image: radial-gradient(#0F2027, darkblue); }

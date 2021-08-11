@@ -68,6 +68,14 @@ section {
     border-radius: 15px;
     margin-bottom: 2rem;
 }
+.news__article--title {
+    text-align: center;
+    padding: 1rem 0;
+    h3 {
+        font-size: 1.8rem;
+        font-style: bold;
+    }
+}
 .news__articles--content {
     font-size: 1.4rem;
     font-style: bold;
@@ -130,13 +138,18 @@ a {
         align-self: center;
         padding: 1rem 0;
     }
+    .news__article--title {
+        h3 {
+            font-size: 2rem;
+        }
+    }
 }
 @media only screen and (min-width: 1024px) {
     #important {
         border: 5px solid $bright-color;
         animation-name: colors;
         animation-duration: 7s;
-        animation-iteration-count: only one;
+        animation-iteration-count: infinite;
         letter-spacing: 3px;
     }
     @keyframes colors {
@@ -192,6 +205,11 @@ a {
     }
     .h5 {
         font-size: 1.8rem;
+    }
+    .news__article--title {
+        h3 {
+            font-size: 4rem;
+        }
     }
 }
 

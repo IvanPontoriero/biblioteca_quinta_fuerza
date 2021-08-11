@@ -27,6 +27,16 @@
     box-shadow: 0px 3px 10px $bright-color;
     z-index: 1;
 }
+
+.header__bookImg {
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 138px;
+    margin-left: 33vw;
+    margin-right: 33vw;
+}
+
 @media screen and (min-width: 768px) {
     .general__header {
         font-size: $default-font-size;
