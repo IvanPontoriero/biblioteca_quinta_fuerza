@@ -12,9 +12,10 @@
     padding: 1rem .5rem;
     color: $text-color;
     text-decoration: none;
-    font-size: .7rem;
+    font-size: .9rem;
     letter-spacing: 2px;
 }
+
 @media screen and (min-width: 768px) {
     .nav__links{
         padding: 1rem 3rem;
@@ -36,11 +37,15 @@
         color: $text-color;
         text-decoration: none;
         font-size: $default-font-size + .4rem;
-        transition: all 2s;
+        background-image: linear-gradient(90deg, lightgray, $bright-color);
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size 300ms ease;
     }
     .nav__links:hover {
-        text-decoration: overline;
-        color: $bright-color;
+        background-size: 100% 3px;
+        color: $text-color;
     }
     .dropdown-menu {
         border-radius: 6px;

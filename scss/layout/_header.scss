@@ -10,13 +10,16 @@
     top: 0;
     width: $default-width;
     height: 100vh; 
+
 }
+
 #header__home--content {
     color: $text-color;
     text-align: justify;
     font-size: $default-font-size;
-    padding: 1.2rem;
+    padding: 1.5rem 3rem;
 }
+
 .general__header {
     background-color: $dark-color;
     color: $text-color;
@@ -26,15 +29,6 @@
     width: $default-width;
     box-shadow: 0px 3px 10px $bright-color;
     z-index: 1;
-}
-
-.header__bookImg {
-    position: absolute;
-    z-index: 100;
-    width: 300px;
-    height: 138px;
-    margin-left: 33vw;
-    margin-right: 33vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -51,16 +45,18 @@
 @media screen and (min-width: 1024px) {
     .general__header {
         font-size: $default-font-size + .4rem;
-        padding: 1.2rem 0;
+        padding: 1rem 0;
         ul {
-            gap: 2rem;
+            gap: 2.3rem;
         }
     } 
     #header__home--content {
         color: $text-color;
         justify-self: center;
         font-size: $default-font-size + .7rem;
-        padding: 5rem;
+        padding: 5rem 9rem;
+        p {
+            margin-bottom: 2.5rem;
+        }
     }
-
 }
