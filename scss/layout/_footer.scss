@@ -19,12 +19,20 @@
         text-decoration: none;
     }
 }
+.footer__icons {
+    display:flex;
+    width: 20vw;
+    justify-content: space-around;
+}
 .footer__icon--white {
     font-size: 2rem;
     color: #DD2A7B;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: .5rem;
+    gap: 2rem;
+    background-color: $dark-color;
+    transition: background-color 500ms ease-in-out;
 }
 .footer__icon--turquoise {
     @extend .footer__icon--white;
@@ -33,6 +41,12 @@
 .footer__icon--black {
     @extend .footer__icon--white;
     color: black;
+}
+@each $color in white, turquoise, black {
+    .footer__icon--#{$color}:hover {
+        transform: scale(1.2, 1.2);
+        background-color: $text-color; 
+    }
 }
 @media only screen and (min-width: 1024px) {
     #footer__nav ul{

@@ -3,7 +3,7 @@
     display: flex;
     background-color: #FF3D00;
     height: 70vh;
-    opacity: .8;
+    padding-top: 2rem;
     align-content: center;
     position: relative;
 }
@@ -17,13 +17,13 @@
     h3 {
         font-weight: 900;
         font-size: $default-font-size + .7rem;
-        padding-top: 4rem;
+        padding-top: 3.3rem;
         margin: 0;
         text-align: center;
     }
     p {
         padding: 1em 2.5em 0 2.5em;
-        font-size: $default-font-size;
+        font-size: $default-font-size - .1rem;
         font-weight: 600;
     }
 }
@@ -38,7 +38,7 @@
     font-size: 1em;
     display: inline-block;
     cursor: pointer;
-    color: $bright-color;
+    color: $dark-color;
     border: 2px solid $bright-color;
     padding: .25em 1em;
     border-radius: .25em;
@@ -127,7 +127,7 @@
         }
         p {
             font-size: $default-font-size;
-            font-weight: 700;
+            font-weight: 600;
         }
     }
 
@@ -147,7 +147,8 @@
             font-size: $default-font-size + 1.7rem;
         }
         p {
-            font-size: $default-font-size + .7rem;
+            font-size: $default-font-size + .6rem;
+            letter-spacing: 2px;
         }
     }
 

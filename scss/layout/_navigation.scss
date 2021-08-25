@@ -1,13 +1,29 @@
 
 #nav__home--container {
-    padding: 2rem 0;
+    width: 100%;
+    padding-top: 2rem;
 }
+
+.nav {
+    color: $dark-color;
+    display: none;
+}
+
+.home--logo {
+    color: $text-color;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding-left: 2.4rem;
+    padding-bottom: .5rem;
+}
+
 .nav__list{
     display: flex;
     list-style: none;
-    flex-wrap: nowrap;
-    align-items: center; 
+    flex-flow: column nowrap;
+    align-items: flex-start; 
 }
+
 .nav__links{
     padding: 1rem .5rem;
     color: $text-color;
@@ -16,27 +32,107 @@
     letter-spacing: 2px;
 }
 
-@media screen and (min-width: 768px) {
-    .nav__links{
-        padding: 1rem 3rem;
-        gap: .5rem;
-        color: $text-color;
-        text-decoration: none;
-        font-size: $default-font-size;
+.nav__list__items {
+    padding: .7rem;
+    justify-items: center;
+}
+
+.nav__links {
+    color: $text-color;
+    text-decoration: none;
+    font-size: $default-font-size + .2rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.nav--submenu {
+    font-size: $default-font-size + .2rem;
+    padding: .5rem 1rem;
+}
+
+.dropdown-menu {
+    border-radius: 4px;
+}
+
+.nav__home--toggle {
+    display: none;
+}
+
+.nav__home--toggle:checked ~ nav {
+    display: block;
+}
+
+.nav__label--toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    border: 3px solid text-color;
+    border-radius: 3px;
+    span, span::before, span::after {
+        display: block;
+        background: #6c757d;
+        height: 2px;
+        width: 1.5rem;
+        border-radius: 3px;
+        position: relative;
+    }
+    span::before, span::after {
+        content: '';
+        position: absolute;
+    }
+    span::before {
+        bottom: 5px;
+    }
+    span::after {
+        top: 5px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .nav__links{
+        padding: 1rem ;
+        gap: .5rem;
+        font-size: $default-font-size + .3rem;
+    }
+    .nav--submenu {
+        font-size: $default-font-size + .3rem;
+        padding: .5rem 1.3rem;
+    }
+    .home--logo {
+        font-size: 1.6rem;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    #nav__home--container {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .nav {
+        display: block;
+        width: 100%;
+    }
+    .home--logo {
+        font-size: 2.3rem;
+    }
     .nav__list {
         display: flex;
-        list-style: none;
-        gap: 2rem;
-        flex-wrap: nowrap;
+        gap: 1rem;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
     .nav__links {
-        padding: 1rem 3rem;
+        padding: 1rem 3rem 1rem 3rem;
         color: $text-color;
         text-decoration: none;
-        font-size: $default-font-size + .4rem;
+        font-size: $default-font-size + .5rem;
         background-image: linear-gradient(90deg, lightgray, $bright-color);
         background-size: 0% 3px;
         background-repeat: no-repeat;
@@ -51,7 +147,8 @@
         border-radius: 6px;
     }
     .nav--submenu {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        padding: .7rem 3.3rem;
     }
     .seeker {
         height: 30px;
@@ -59,6 +156,38 @@
         input, button {
             font-size: $default-font-size;
             border-radius: 5px;
+        }
+    }
+    .nav__home--toggle {
+        display: none;
+    }
+    .nav__home--toggle:checked ~ nav {
+        display: none;
+    }
+    .nav__label--toggle {
+        display: none;
+        span, span::before, span::after {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .home--logo {
+        font-size: 3rem;
+    }
+    .nav__links {
+        font-size: $default-font-size + 1rem;
+    }
+    .nav--submenu {
+        font-size: 2.2rem;
+        padding: 1rem 3.7rem;
+    }
+    .seeker {
+        height: 35px;
+        width: $default-width / 3;
+        input, button {
+            font-size: $default-font-size + .3rem;
         }
     }
 }

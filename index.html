@@ -17,12 +17,17 @@
     <!--Logo y Barra de Navegación-->
     <header id='header__home'>
         <div id='nav__home--container'>
+            <a class="navbar-brand home--logo" href="index.html">-BQF-</a>
+            <input type='checkbox' id='nav__home--toggle' class='nav__home--toggle'>
+            <label for='nav__home--toggle' class='nav__label--toggle'>
+                <span></span>
+            </label>
             <nav class='nav'>
                 <ul class='nav__list'>
-                    <li>
+                    <li class='nav__list__items'>
                         <a class='nav__links' href='index.html'>Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav__list__items">
                         <a class='nav-link dropdown-toggle nav__links' href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Catálogo
                         </a>
@@ -31,13 +36,13 @@
                           <li><a class="dropdown-item nav--submenu" href="./pages/titulos.html">Título</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class='nav__list__items'>
                         <a class='nav__links' href='./pages/noticias.html'>Noticias</a>
                     </li>
-                    <li>
+                    <li class='nav__list__items'>
                         <a class='nav__links' href='./pages/glosario.html'>Glosario</a>
                     </li>                        
-                    <li>
+                    <li class='nav__list__items'>
                         <a class='nav__links' href='./pages/contacto.html'>Contacto</a>
                     </li>
                 </ul>
@@ -49,16 +54,6 @@
                 <p><strong>Biblioteca Quinta Fuerza</strong> pretende unir en el mismo espacio bibliografías que incluyan desde <em>los autores más influyentes</em> en las ciencias básicas hasta la <em>vanguardia</em> de las disciplinas más específicas logrando una amplia <strong>fuente de conocimientos</strong> en una época en la que nos es difícil encontrarlos de forma física como alguna vez nos fue posible.</p>
         </div>   
     </header>
-    <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-blue">
-            <div class="circle-clipper left">
-                    <div class="circle"></div>
-            </div><div class="gap-patch">
-                    <div class="circle"></div>
-            </div><div class="circle-clipper right">
-                    <div class="circle"></div>
-            </div>
-    </div>
     <section>
         <div class='section table-responsive'>
             <table class="table table-dark" id='table-size'>
@@ -91,12 +86,12 @@
                     <dt class='section__news--books'><a href='./pdfs/CalculoDiferencialEIntegral-N.Pisnukov.pdf' target='_blank'>Cálculo Integral y Diferencial.</a></dt>
                     <dd>Autor/es: Nikolai Pisnukov.</dd>
                     <dd>Año: 1991.</dd>
-                    <dd>Contenido:Número, variable, función.- Límite y continuidad de las funciones.- Derivada y diferencial.- Teoremas sobre las funciones derivables.- Análisis de la variación de las funciones.- Curvatura de una curva.- Números complejos; polinomios.- Funciones de varias variables.- Aplicaciones del Cálculo diferencial a la geometría del espacio.- Integral indefinida.- Integral definida.- Aplicaciones geométricas y mecánicas de la integral definida.- Ecuaciones diferenciales.- Integrales curvilíneas e integrales de superficie.- Series.- Series de Fourier.- Aplicaciones físicas.- Cálculo operacional y algunas de sus aplicaciones.</dd>
+                    <dd>Contenido: Número, variable, función.- Límite y continuidad de las funciones.- Derivada y diferencial.- Teoremas sobre las funciones derivables.- Análisis de la variación de las funciones.- Curvatura de una curva.- Números complejos; polinomios.- Funciones de varias variables.- Aplicaciones del Cálculo diferencial a la geometría del espacio.- Integral indefinida.- Integral definida.- Aplicaciones geométricas y mecánicas de la integral definida.- Ecuaciones diferenciales.- Integrales curvilíneas e integrales de superficie.- Series.- Series de Fourier.- Aplicaciones físicas.- Cálculo operacional y algunas de sus aplicaciones.</dd>
                     <dd>Edición: 1°.</dd>
                     <dt class='section__news--books'><a href='./pdfs/Ecuaciones diferenciales con aplicaciones y notas historicas.pdf' target='_blank'>Ecuaciones Diferenciales con Aplicaciones y Notas Historicas.</a></dt>
                     <dd>Autor/es: George F. Simmons.</dd>
                     <dd>Año: 2002.</dd>
-                    <dd>Contenido:La naturaleza de las ecuaciones diferenciales, Ecuaciones de primer orden, Ecuaciones lineales de segundo orden, Propiedades cualitativas de las soluciones, Soluciones en series de potencias y funciones especiales, Series de Fourier y funciones ortogonales, Ecuaciones en derivadas parciales y problemas de contorno, Algunas funciones especiales de la física matemática, Transformadas de Laplace, Sistemas de ecuaciones de primer orden, Ecuaciones no lineales, El cálculo de variaciones, Existencia y unicidad de soluciones, Métodos numéricos, Tablas numéricas.</dd>
+                    <dd>Contenido: La naturaleza de las ecuaciones diferenciales, Ecuaciones de primer orden, Ecuaciones lineales de segundo orden, Propiedades cualitativas de las soluciones, Soluciones en series de potencias y funciones especiales, Series de Fourier y funciones ortogonales, Ecuaciones en derivadas parciales y problemas de contorno, Algunas funciones especiales de la física matemática, Transformadas de Laplace, Sistemas de ecuaciones de primer orden, Ecuaciones no lineales, El cálculo de variaciones, Existencia y unicidad de soluciones, Métodos numéricos, Tablas numéricas.</dd>
                     <dd>Edición: 2°.</dd>
                     <dt class='section__news--books'><a href='./pdfs/Fisica-Universitaria(Vol.1)-Sears-Zemansky-12va-Edicion (1).pdf' target='_blank'>Física Universitaria Vol.1.</a></dt>
                     <dd>Autor/es: Francis Sears, Mark Zemansky.</dd>
@@ -130,7 +125,7 @@
     <div class='jumbotron jumbotron--bg'>
         <div class="jumbotron--rounded">
             <h3 class="display-6">Conciencia Holística</h3>
-            <p class="lead">En pos de lograr la formación e información de aquellas personas que estamos aquí para determinar el futuro, hacerlo inclusivo y universal, Biblioteca Quinta Fuerza busca satisfacer todas las necesidades del estudiante y el curioso, que hasta el momento no se habían tenido en cuenta, trayendo un amplio paradigma de documentos que intentan cubrir la gran mayoría de áreas que serán básicas para desarrollar nuestro porvenir como sociedad integra.</p>
+            <p class="lead">En pos de lograr la formación e información de aquellas personas que estamos aquí para lograr el desarrollo de un futuro mejor, inclusivo y equitativo, <em>Biblioteca Quinta Fuerza</em> busca satisfacer todas las necesidades <em>del estudiante y el curioso</em>, que hasta el momento no se habían tenido en cuenta, trayendo un <em>amplio paradigma de documentos</em> que intentan cubrir la gran mayoría de áreas que serán básicas para el despliegue de nuestro porvenir como sociedad integra.</p>
             <hr class="my-4">
             <div class='jumbotron__btn--container'>
                 <a class="jumbotron__btn jumbotron__btn--neon" href="pages/nosotros.html" role="button">Conocenos</a>
@@ -154,7 +149,7 @@
                         </li>
                     </ul>
                 </div>
-            <span>
+            <span class='footer__icons'>
                 <a href='https://github.com/IvanPontoriero/biblioteca_quinta_fuerza' target='blank'><i class="fab fa-github footer__icon--black"></i></a>
                 <a href='#' target='blank'><i class="fab fa-twitter footer__icon--turquoise"></i></a>
                 <a href='#' target='blank'><i class="fab fa-instagram footer__icon--white"></i></a>

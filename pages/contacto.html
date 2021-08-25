@@ -67,7 +67,7 @@
         <label class='form__label' for='email'>eMail</label>
         <input id='email' type='email' name='email' placeholder='nombre@ejemplo.com'/>
         <label class='form__label' for='orientacion'>Orientacion</label>
-        <select name='orientacion'>
+        <select name='orientacion' class='form__select'>
             <option value='Aeronautica'>Aeronáutica</option>
             <option value='Alimentos'>Alimentos</option>
             <option value='Ambiente'>Ambiente</option>
@@ -82,10 +82,10 @@
             <label class='form__label' for='mensaje'>Mensaje</label>
             <textarea id='form__message--resize' placeholder='Mensaje'></textarea>
         </div>
-        <div id='form__checkbox'>
+        <span id='form__checkbox'>
             <p>Quiero recibir todas las actualizaciones de la Biblioteca</p>
             <input id='checkbox' type='checkbox' name='acepta' value='1'/>
-        </div>
+        </span>
         <input id='enviar' type='submit' value='Enviar'/>
         <input id='reestablecer' type='reset' value='Reestablecer'/>
     </form>

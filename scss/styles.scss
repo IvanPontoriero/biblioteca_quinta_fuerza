@@ -4,6 +4,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
@@ -24,14 +25,12 @@ body {
 
 @import 'layout/header';
 @import 'layout/navigation';
-@import 'layout/grids';
 @import 'layout/forms';
 @import 'layout/footer';
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/general-components';
 @import 'components/jumbo';
-@import 'components/sassy';
 
 
 
