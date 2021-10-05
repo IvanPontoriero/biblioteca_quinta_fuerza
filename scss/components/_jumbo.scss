@@ -137,7 +137,24 @@
 }
 
 @media screen and (min-width: 1024px) {
-    
+    .dark {
+        .jumbotron--bg {
+            background-color: purple;
+        }
+        .jumbotron--rounded {
+            background-color: $dark-color;
+            box-shadow: 0 0 2.5rem #D9D9D9;
+        }
+        .jumbotron--bg::before, .jumbotron--bg::after {
+            background: purple;
+        }
+        .jumbotron__btn {
+            color: $text-color;
+        }
+        .jumbotron__btn--neon:hover {
+            color: $text-color;
+        } 
+    }
     .jumbotron--rounded {
         padding: 2em;
         margin: 5em;

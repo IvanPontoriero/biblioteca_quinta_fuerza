@@ -12,6 +12,45 @@
     font-size: $default-font-size;
     border-radius: 5px;
 }
+.news__api {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    .news__api--container {
+        margin: 3rem;
+        padding: 1.5rem;
+        border: 2px #FFF;
+        border-radius: 0 10px 0 10px;
+        box-shadow: 2px 2px 4px rgb(14, 68, 216), 3px 3px 6px #DD2A7B, 4px 4px 8px green;
+        background: #281E5D;
+        color: whitesmoke;
+    }
+    .btn__news--api {
+        margin: 3rem;
+        padding: 1.5rem;
+        border: 2px #FFF;
+        border-radius: 0 10px 0 10px;
+        box-shadow: 2px 2px 4px rgb(14, 68, 216), 3px 3px 6px #DD2A7B, 4px 4px 8px green;
+        background: #281E5D;
+        color: whitesmoke;
+        font-size: $default-font-size + .4rem;
+    }
+    .btn__news--hide {
+        padding: 1.2rem;
+        margin: 2rem;
+        border: 5px whitesmoke;
+        border-radius: 3px;
+        color: whitesmoke;
+        background: gray;
+        font-size: 1.3rem;
+    }
+    .btn__news--hide:hover {
+        color: $bright-color;
+        background: whitesmoke;
+        font-size: 1.4rem;
+        font-weight: bold
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .descargar {
@@ -20,6 +59,53 @@
     .section__conocenos--btn {
         font-size: 2rem;
         letter-spacing: 2px;
+    }
+    .card--mision {
+        display: block;
+        margin: 2rem;
+        background: #6E6E80;
+        color: $text-color;
+        width: 30vw;
+        height: 50vh;
+        border: 2px $bright-color;
+        border-radius: 0 15px 0 15px;
+        box-shadow: 2px 2px 4px rgb(14, 68, 216), 3px 3px 6px #DD2A7B, 4px 4px 8px green;
+        h3 {
+            padding: 1.5rem;
+            font-size: $default-font-size + .8rem;
+            font-weight: bold;
+            background-color: #191927;
+            border-radius: 0 15px 0 0;
+            text-decoration: underline;
+        }
+        p {
+            padding: 1.5rem;
+            font-size: $default-font-size + .4rem;
+        }
+        ol {
+            padding: 1.5rem;
+            font-size: $default-font-size + .4rem;
+            li {
+                padding-left: 2rem;
+                padding-bottom: 1rem;
+                list-style: none;
+            }
+        }
+    }
+    .conoce--container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .btn--conoce {
+        padding: 1rem;
+        margin: 2rem;
+        font-size: $default-font-size + .5rem;
+        font-weight: bold;
+        color: $text-color;
+        background-color: $dark-color; 
+        border-radius: 0 10px 0 10px;
+        box-shadow: 1px 1px 2px rgb(14, 68, 216), 2px 2px 3px #DD2A7B, 3px 3px 4px green;
     }
 }
 @media screen and (min-width: 1440px) {

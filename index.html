@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Home | Biblioteca Quinta Fuerza</title>
 </head>
+<body class=''>
     <!--Logo y Barra de Navegación-->
     <header id='header__home'>
         <div id='nav__home--container'>
@@ -55,28 +56,24 @@
         </div>   
     </header>
     <section>
-        <div class='section table-responsive'>
-            <table class="table table-dark" id='table-size'>
-                <tbody>
-                    <tr>
-                        <td>MISIÓN</td>
-                        <td>ÁREAS</td>
-                        <td>SÉ PARTE</td>
-                    </tr>
-                    <tr>
-                        <td>Nuestra misión es acercar el conocimiento a todas aquellas personas interesadas en formarse en el campo de la ingeniería y profesiones afines</td>
-                        <td>Buscamos incorporar a nuestra bibliografía: 
-                            <ol>
-                                <li>Ciencias Básicas (Cálculo, Física, Química, Álgebra, Economía)</li>
-                                <li>Campos específicos (Electrónica, Ambiente, Industria, Mecánica, Aeronáutica, etc)</li>
-                                <li>Documentos complementarios</li>
-                            </ol>
-                        </td>
-                        <td>Contactáte con nosotros tocando <a href='./pages/contacto.html'>aquí </a> y compartí opiniones, sugerencias y bibliografía que te gustaria que sumemos!</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <button class='dark__mode dark__mode--display' id='dark__mode'>
+            <span><i class="far fa-sun sun--icon" ></i></span>
+            <span><i class="fas fa-moon moon--icon"></i></span>
+        </button>
+        <div class='conoce--container' id='conoce--container'>
+            <button type='button' class='btn--conoce' id='btn--conoce'>Conocé la Quinta Fuerza!</button>
+            <div class='card--mision' id='card--mision'>
+                <h3>Misión</h3>
+                <p>Como divulgadores del conocimiento en una época de nuestra historia en el que se ha vuelto tan accesible para algunos y altamente confuso para otros:<br><br> Nuestra principal misión es acercar una información imparcial y de alta calidad a todas aquellas personas interesadas en formarse en el campo de la ingeniería y profesiones afines.</p>
+            </div>
+            <div class='card--mision' id='card--mision'>
+                <h3>Campos del Conocimiento</h3>
+                <ol>
+                    <li>Ciencias Básicas: Cálculo, Física, Química, Álgebra, Economía.</li>
+                    <li>Campos específicos: Electrónica, Ambiente, Industria, Mecánica, Aeronáutica, entre tantos.</li>
+                    <li>Documentos complementarios.</li>
+                </ol>
+            </div>
         </div>
         <div class='section__news'>
             <div class='section'>
@@ -132,6 +129,19 @@
             </div>
         </div>
     </div>
+    <div class='popup--wrapper' id='popup--wrapper'>
+        <div class='popup' id='popup'>
+            <div class='popup--content'>
+                <div class='popup--close' id='popup--close'> x </div>
+                <h3 class='popup--title'>¡Colaborá con la Quinta Fuerza!</h3>
+                <p class='popup--content'>Esta Biblioteca subsiste a base de fuerza y ganas de que todxs tengan acceso al conocimiento, con el fin de ampliar los horizontes de todxs y cada unx de ustedes mediante el acercamiento de las bibliografías de mejor calidad.</p>
+                <p class='popup--content'>¡Colaborá con la quinta fuerza haciendo click en el botón debajo y donanos una cafecito!</p>
+                <button class="btn--donar" id='btn--donar'>
+                    <a href="https://cafecito.app/biblioqf" target='_blank'>Donar</a>
+                </button>
+            </div>
+        </div>
+    </div>
     <!--Este nav tiene id distinto al del header ya que luego se realizarán otros cambios-->
     <footer>
         <nav class='navbar navbar-expand-lg navbar-dark bg-dark' id='footer'>
@@ -159,5 +169,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+    <script src='./js/jquery.js'></script>  
+    <script src='./js/main.js'></script>
 </body>
 </html>

@@ -92,6 +92,7 @@
     }
 }
 
+
 @media screen and (min-width: 768px) {
     .nav__links{
         padding: 1rem ;
@@ -104,6 +105,12 @@
     }
     .home--logo {
         font-size: 1.6rem;
+    }
+    .moon--icon {
+        font-size: 1.5rem;
+    }
+    .sun--icon {
+        font-size: 1.5rem;
     }
 }
 
@@ -170,6 +177,57 @@
             display: none;
         }
     }
+
+    .dark__mode {
+        color: $text-color;
+        padding: .1rem;
+        border: 2px $dark-color;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+        background: rgb(255, 87, 25);
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 33px;
+            height: 33px;
+            border-radius: 20px;
+            background: $text-color;
+            top: 0;
+            left: unset;
+            right: 0;
+            box-shadow: 0 0 2px 2px $dark-color
+        }
+        &.active {
+            background: rgb(0, 0, 61);
+        }
+        &.active::after {
+            left: 0;
+            right: unset;
+        }
+        span {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+        }
+    }
+    .moon--icon {
+        padding: .5rem;
+        font-size: 2rem;
+        color: $text-color;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    .sun--icon {
+        padding: .5rem;
+        font-size: 2rem;
+        color: $text-color;
+        border-radius: 20px 0px 0px 20px;
+    } 
 }
 
 @media only screen and (min-width: 1440px) {
