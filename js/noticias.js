@@ -11,7 +11,7 @@ $('#btn__news--api').click( (e) => {
     fetch(URLGET)
     .then(response => response.json() )
     .then(data => {
-        $('#news__api--container').delay('10').fadeIn(1000).append(`
+        $('#news__api--container').fadeIn(1000).append(`
         <h3>Marca de tiempo: ${data.timestamp}</h3>
         <p> Latitud: ${data['iss_position']['latitude']} - Longitud: ${data['iss_position']['longitude']}</p>
         <img src='../multimedia/ISS.jpg'></img>
