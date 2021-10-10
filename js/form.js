@@ -38,7 +38,6 @@ enviar.addEventListener('click', (e) => {
         <p><b>Por favor complete los campos obligatorios (Nombre- Email - Checkbox).</b></p>
         `
     } 
-    console.log(datos)
 })
 
 //Evento para limpiar form
